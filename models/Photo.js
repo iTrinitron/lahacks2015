@@ -12,7 +12,6 @@ var PhotoSchema = new mongoose.Schema({
   long: Number,
   creator_id: Number,
   receiver_id: Number,
-  file: String,
   date: { type: Date, default: Date.now }
 });
 

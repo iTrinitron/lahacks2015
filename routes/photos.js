@@ -29,7 +29,7 @@ router.get('/:id/friendsPhotos', function(req, res, next) {
 
 //Create a Photo
 router.post('/', function(req, res, next) {
-  req.body.file = req.files.file.name; //Get the uploaded file name and attach it to the object
+  //req.body.file = req.files.file.name; //Get the uploaded file name and attach it to the object
   Photo.create(req.body, function (err, post) {
     if (err) return next(err);
     res.json({success: true});
